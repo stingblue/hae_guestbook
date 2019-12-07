@@ -1,0 +1,243 @@
+@font-face {
+  font-family: Caveat-Bold;
+  src: url(../fonts/Caveat-Bold.ttf);
+}
+
+.theme-color {
+  background-color: #c61f3d;
+
+}
+
+.flash-message, .alert-danger, .alert-success {
+  margin-bottom: 30px;
+}
+
+.post-message {
+  background-color: #c61f3d;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.left-content {
+  padding: 10px 30px 10px 30px;
+}
+
+.content-box {
+  background-color: #383842;
+}
+
+.content-box .row div {
+  padding: 50px 70px 5px 70px;
+}
+
+body, div, table { 
+    color: #000000; 
+    font-size: 16px; 
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400; 
+} 
+
+.title-page {
+  color: #3e3e3e;
+}
+
+.lead {
+  color: #4b4b4b;
+  font-size: 15px;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+}
+.timer {
+  color: #d9d9d9;
+  font-size: 11px;
+  margin-top: -12px;
+}
+
+.guest-name {
+  font-family: 'Caveat-Bold', sans-serif;
+  font-size: 17px;
+}
+.guest-name span {
+  float: right;
+  margin-top: 20px;
+}
+.fa {
+  color: white;
+    background: #c81a3b;
+    border-radius: 15px;
+    padding: 6px;
+    margin-left: 5px;
+}
+
+.admin-login-link {
+  color: #4b4b4b;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+.admin-logout-link {
+  color: #4b4b4b;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+ul.pagination li.active {
+  background: #c81a3b;
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+ul.pagination li {
+  padding: 5px 12px 5px 12px; 
+}
+
+ul.pagination li a {
+  color: white;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/*END*/
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.login-popup, .feedback-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus, .form-container input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #c61f3d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: grey;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
