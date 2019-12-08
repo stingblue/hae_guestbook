@@ -36,7 +36,7 @@ html, body { height: 100%; }
   padding: 10px 30px 10px 30px;
 }
 
-.content-box {
+.content-box, .content-box > .row {
   background-color: #383842;
 }
 
